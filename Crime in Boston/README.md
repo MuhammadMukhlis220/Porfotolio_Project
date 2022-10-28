@@ -5,6 +5,7 @@
 # About this repository:
 
 This repository contains a Data Analysis project to analyzed crime behavior on Boston using the [Crime in Boston](https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston) dataset.<br> <br>
+Warning: **Some plot results not showing on github because using plotly express, you can see the plot by downloading the file first then opening it in jupyter or your vs code** <br> <br>
 Here the summary of the results of this project:
 
 ## **Business Problem Understanding**
