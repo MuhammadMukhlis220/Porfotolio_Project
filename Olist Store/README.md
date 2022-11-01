@@ -2,7 +2,7 @@
 
 ![a](https://play-lh.googleusercontent.com/eqLTXWdyygKUf85JsCXmcLSr1GnoYNLJfFVCmY-N8xGFr2T3PWwNcFdJ2Sx7MwcO6ac)
 
-### **Alpha Team :**
+### **Contributor :**
 - Kevin Pratama
 - Muhammad Mukhlis
 - Sari Amalia
