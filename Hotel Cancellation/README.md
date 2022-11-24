@@ -4,8 +4,8 @@
 
 # About this repository:
 
-This repository contains a Machine Learning project to help the hotel property about customer who cancel the booking order using the [Hotel Booking](https://www.kaggle.com/datasets/barathsrinath/hotel-booking) dataset.<br> <br>
-Warning: **Some plot results not showing on github because using plotly express, you can see the plot by downloading the file first then opening it in jupyter or your vs code** <br> <br>
+This repository contains a Machine Learning project to help the hotel property about customer who cancel the booking order using the [Hotel Booking](https://www.kaggle.com/datasets/barathsrinath/hotel-booking) dataset.<br>
+
 Here the summary of the results of this project:
 
 ## **Business Problem Understanding**
