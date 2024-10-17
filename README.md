@@ -2,25 +2,23 @@
 ---
 # **WELCOME TO MY PORFOTOLIO**
 
-Bagian ini berisi portofolio yang menampilkan pengalaman kerja saya serta partisipasi dalam bootcamp di Purwadhika, di mana saya mengembangkan keterampilan dan pengetahuan di bidang data.
+This section contains my portfolio showcasing my work experience and participation in the bootcamp at Purwadhika, where I developed skills and knowledge in the field of data..
 
 
-## 1. Optimasi Data Indonesia - Data Science
-### Maret 2024 - Sekarang
+## 1. Optimasi Data Indonesia - Data Analyst
+### March 2024 - Present
 **1. Football Player Statistic**
    
 <p align="justify">
-Pada project ini saya mengemban tanggung jawab untuk menyiapkan use case terkait statistik pemain bola kepada calon klien dari salah satu klub sepak bola terbesar di Indonesia. Data diambil dari Website <a href="https://www.sofascore.com">Sofascore</a> menggunakan API yang tersedia. Saya mencoba mencari API yang tersedia secara gratis selain Sofascore namun sangat sulit karena rata-rata penyedia layanan API untuk statistik pemain bola adalah langganan yang berbayar. Sayangnya Sofascore hanya menyediakan statistik pemain berdasarkan overall-nya saja sehingga cukup sulit menentukan perkembangan pemain dari tiap match yang dijalankan. Data-data pemain yang diambil adalah pemain dari 5 liga top Eropa (Liga Inggris, Perancis, Italia, Spanyol, dan Jerman) dan BRI Liga 1 Indonesia.
+In this project, I am responsible for preparing a use case related to football player statistics for potential clients from one of the largest football clubs in Indonesia. Data is taken from the website <a href="https://www.sofascore.com">Sofascore</a> using the available API. I tried to find freely available APIs besides Sofascore, but it is quite difficult because most API service providers for football player statistics are subscription-based. Unfortunately, Sofascore only provides player statistics based on their overall performance, making it challenging to determine the development of players from each match played. The player data collected includes players from the top 5 European leagues (English Premier League, France, Italy, Spain, and Germany) and BRI Liga 1 Indonesia.
 </p>
 
 ![Alt Text](/pic/football_flow_1.jpg)
 
 Gambar 1.1
-<p align="justify">
-Proses ekstrak data dari web tersebut dijalankan menggunakan <strong>Apache Airflow</strong> sebagai data orchestration tool yang dijadwalkan menarik data-data tersebut lewat API seminggu sekali dengan melewatkan jadwal pertandingan antar negara dari FIFA. Data yang diambil dimasukkan ke <strong>OpenSearch</strong> untuk divisualisasikan.
-</p>
+<p align="justify"> The data extraction process from the web is executed using <strong>Apache Airflow</strong> as a data orchestration tool scheduled to pull data weekly through the API while considering the match schedules between countries from FIFA. The data collected is inserted into <strong>OpenSearch</strong> for visualization. </p>
 
-Berikut adalah data-data Sofascore yang diambil lewat API yang tersedia:
+Here is the Sofascore data retrieved via the available API:
 ![Alt Text](/pic/sofascore_1.png)
 Gambar 1.2
 
