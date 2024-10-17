@@ -13,8 +13,13 @@ Bagian ini berisi portofolio yang menampilkan pengalaman kerja saya serta partis
 
 ## Optimasi Data Indonesia - Data Science
 ### Maret 2024 - Sekarang
-1. Football Player Statistic
-Pada project ini saya mengemban tanggung jawab untuk menyiapkan use case terkait dunia sepak bola kepada calon klien dari salah satu klub sepak bola terbesar di Indonesia.
+**1. Football Player Statistic**
+   
+Pada project ini saya mengemban tanggung jawab untuk menyiapkan use case terkait dunia sepak bola kepada calon klien dari salah satu klub sepak bola terbesar di Indonesia. Data diambil dari Website [Sofascore](https://www.sofascore.com) menggunakan API yang tersedia. Sayangnya Sofascore hanya menyediakan statistik pemain berdasarkan overall nya saja sehingga cukup sulit menentukan perkembangan pemain dari tiap match yang dijalankan. 
+
+![Alt Text](/pic/football_flow_1.jpg)
+
+Proses ekstrak data dari web tersebut dijalankan menggunakan **Apache Airflow** sebagai data orchestration tool yang dijadwalkan menarik data-data tersebut lewat API seminggu sekali dengan melewatkan jadwal pertandingan antar negara dari FIFA. DAta yang diambil dimasukkan ke **OpenSearch** untuk divisualisasikan.
 
 ## Telkomsel Orbit - Data Analyst
 ### Juni 2023 - Desember 2023
