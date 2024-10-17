@@ -14,22 +14,30 @@ Pada project ini saya mengemban tanggung jawab untuk menyiapkan use case terkait
 </p>
 
 ![Alt Text](/pic/football_flow_1.jpg)
+
 Gambar 1.1
 <p align="justify">
 Proses ekstrak data dari web tersebut dijalankan menggunakan <strong>Apache Airflow</strong> sebagai data orchestration tool yang dijadwalkan menarik data-data tersebut lewat API seminggu sekali dengan melewatkan jadwal pertandingan antar negara dari FIFA. Data yang diambil dimasukkan ke <strong>OpenSearch</strong> untuk divisualisasikan.
 </p>
 
+Berikut adalah data-data Sofascore yang diambil lewat API yang tersedia:
+![Alt Text](/pic/sofascore_1.png)
+Gambar 1.2
+
 Hasil visualisasi dapat diatur menggunakan timestamp yang diset satu minggu yang lalu sehingga data yang lama tidak akan ikut tervisualisasi. Berikut dashboard yang dibuat:
 
 ![Alt Text](/pic/football_1.jpg)
-Gambar 1.2
-![Alt Text](/pic/football_2.jpg)
 Gambar 1.3
-![Alt Text](/pic/football_3.jpg)
+![Alt Text](/pic/football_2.jpg)
 Gambar 1.4
+![Alt Text](/pic/football_3.jpg)
+Gambar 1.5
 
 Ketiga gambar dashboard di atas bersifat interaktif sehingga dapat dilakukan pemfilteran terhadap nama klub atau nama pemain.
-
+<br>
+<br>
+<br>
+<br>
 **2. Aplikasi Kementerian**
 
 <p align="justify">
@@ -72,6 +80,13 @@ Gambar 2.3
 ![Alt Text](/pic/aplikasi_2.jpg)
 Gambar 2.4
 
+<br>
+<br>
+<br>
+<br>
+
+---
+
 ## 2. Telkomsel Orbit - Data Analyst
 ### Juni 2023 - Desember 2023
 <p align="justify">
@@ -85,9 +100,11 @@ Berikut adalah beberapa dashboard yang menjadi tanggung jawab saya:
 
 ![Alt Text](/pic/telkomsel_2.jpg)
 **Informasi angka dan kalimat dari gambar di atas tidak valid demi menjaga kerahasiaan Telkomsel.**
-
+<br>
+<br>
+<br>
+<br>
 ---
-
 ## 3. Purwadhika Digital Technology School - Bootcamp Data Science
 ### Mei 2022 - Oktober 2022
 <p align="justify">
