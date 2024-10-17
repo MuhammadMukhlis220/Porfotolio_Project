@@ -11,15 +11,38 @@ Thank You
 Bagian ini berisi portofolio yang menampilkan pengalaman kerja saya serta partisipasi dalam bootcamp di Purwadhika, di mana saya mengembangkan keterampilan dan pengetahuan di bidang data
 
 
-## Optimasi Data Indonesia - Data Science
+## 1. Optimasi Data Indonesia - Data Science
 ### Maret 2024 - Sekarang
 **1. Football Player Statistic**
    
-Pada project ini saya mengemban tanggung jawab untuk menyiapkan use case terkait dunia sepak bola kepada calon klien dari salah satu klub sepak bola terbesar di Indonesia. Data diambil dari Website [Sofascore](https://www.sofascore.com) menggunakan API yang tersedia. Sayangnya Sofascore hanya menyediakan statistik pemain berdasarkan overall nya saja sehingga cukup sulit menentukan perkembangan pemain dari tiap match yang dijalankan. 
+<p align="justify">
+Pada project ini saya mengemban tanggung jawab untuk menyiapkan use case terkait statistik pemain bola kepada calon klien dari salah satu klub sepak bola terbesar di Indonesia. Data diambil dari Website <a href="https://www.sofascore.com">Sofascore</a> menggunakan API yang tersedia. Saya mencoba mencari API yang tersedia secara gratis selain Sofascore namun sangat sulit karena rata-rata penyedia layanan API untuk statistik pemain bola adalah langganan yang berbayar. Sayangnya Sofascore hanya menyediakan statistik pemain berdasarkan overall-nya saja sehingga cukup sulit menentukan perkembangan pemain dari tiap match yang dijalankan. Data-data pemain yang diambil adalah pemain dari 5 liga top Eropa (Liga Inggris, Perancis, Italia, Spanyol, dan Jerman) dan BRI Liga 1 Indonesia.
+</p>
 
 ![Alt Text](/pic/football_flow_1.jpg)
+Gambar 1.1
+<p align="justify">
+Proses ekstrak data dari web tersebut dijalankan menggunakan <strong>Apache Airflow</strong> sebagai data orchestration tool yang dijadwalkan menarik data-data tersebut lewat API seminggu sekali dengan melewatkan jadwal pertandingan antar negara dari FIFA. Data yang diambil dimasukkan ke <strong>OpenSearch</strong> untuk divisualisasikan.
+</p>
 
-Proses ekstrak data dari web tersebut dijalankan menggunakan **Apache Airflow** sebagai data orchestration tool yang dijadwalkan menarik data-data tersebut lewat API seminggu sekali dengan melewatkan jadwal pertandingan antar negara dari FIFA. DAta yang diambil dimasukkan ke **OpenSearch** untuk divisualisasikan.
+Hasil visualisasi dapat diatur menggunakan timestamp yang diset satu minggu yang lalu sehingga data yang lama tidak akan ikut tervisualisasi. Berikut dashboard yang dibuat:
+
+![Alt Text](/pic/football_1.jpg)
+Gambar 1.2
+![Alt Text](/pic/football_2.jpg)
+Gambar 1.3
+![Alt Text](/pic/football_3.jpg)
+Gambar 1.4
+
+Ketiga gambar dashboard di atas bersifat interaktif sehingga dapat dilakukan pemfilteran terhadap nama klub atau nama pemain.
+
+**2. Aplikasi Kementerian**
+
+<p align="justify">
+Pada project ini saya berkesempatan menjadi PIC untuk mengalirkan data-data sebuah kementerian dari database mereka (PostgreSQL) menjadi satu aplikasi khusus. Data-data tersebut berisi anggaran daerah yang secara internal perlu disebarluaskan ke pemerintah-pemerintah daerah menggunakan aplikasi yang akan dibuat. Perusahaan saya dipilih menjadi penanggungjawab database aplikasi tersebut dimana dibalut dengan produk kami yaitu <a href="https://onyx.id/">Onyx</a> Big Data Platform. Onyx banyak memanfaatkan aplikasi open source yang pada projek ini aplikasi yang digunakan adalah <strong>Apache Hadoop</strong>, <strong>Apache Airflow</strong>, <strong>Apache Hive</strong>, <strong>Apache Zeppelin</strong>, <strong>Apache Spark</strong>, dan <strong>OpenSearch</strong>.
+</p>
+
+![Alt Text](/pic/application_flow.jpg)
 
 ## Telkomsel Orbit - Data Analyst
 ### Juni 2023 - Desember 2023
