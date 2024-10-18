@@ -1,3 +1,4 @@
+Hello I'am Mukhlis a passionate person in data and machine learning who professional in data analysis and experience in processing large datasets. Bachelor of Electrical Engineer with almost 2 years work experience in data. Have experience at PT. Telekomunikasi Selular Indonesia as Data Analyst and now work at PT. Optimasi Data Indonesia as Data Analyst too.
 
 ---
 # **WELCOME TO MY PORFOTOLIO**
