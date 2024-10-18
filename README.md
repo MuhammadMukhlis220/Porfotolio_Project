@@ -16,68 +16,68 @@ In this project, I am responsible for preparing a use case related to football p
 
 ![Alt Text](/pic/football_flow_1.jpg)
 
-Gambar 1.1
+Figure 1.1
 <p align="justify"> The data extraction process from the web is executed using <strong>Apache Airflow</strong> as a data orchestration tool scheduled to pull data weekly through the API while considering the match schedules between countries from FIFA. The data collected is inserted into <strong>OpenSearch</strong> for visualization. </p>
 
 Here is the Sofascore data retrieved via the available API:
 ![Alt Text](/pic/sofascore_1.png)
-Gambar 1.2
+Figure 1.2
 
-Hasil visualisasi dapat diatur menggunakan timestamp yang diset satu minggu yang lalu sehingga data yang lama tidak akan ikut tervisualisasi. Berikut dashboard yang dibuat:
+The visualization can be adjusted using a timestamp set to one week ago, ensuring that older data will not be visualized. Below is the dashboard created:
 
 ![Alt Text](/pic/football_1.jpg)
-Gambar 1.3
+Figure 1.3
 ![Alt Text](/pic/football_2.jpg)
-Gambar 1.4
+Figure 1.4
 ![Alt Text](/pic/football_3.jpg)
-Gambar 1.5
+Figure 1.5
 
-Ketiga gambar dashboard di atas bersifat interaktif sehingga dapat dilakukan pemfilteran terhadap nama klub atau nama pemain.
+The three dashboard images above are interactive, allowing for filtering by club name or player name.
 <br>
 <br>
 <br>
 <br>
-**2. Aplikasi Kementerian**
+**2. Ministry Application**
 
 <p align="justify">
-Pada project ini saya berkesempatan menjadi PIC untuk mengalirkan data-data sebuah kementerian dari database mereka (PostgreSQL) menjadi satu aplikasi khusus. Data-data tersebut berisi anggaran daerah yang secara internal perlu disebarluaskan ke pemerintah-pemerintah daerah menggunakan aplikasi yang akan dibuat. Perusahaan saya dipilih menjadi penanggungjawab database aplikasi tersebut dengan membawa produk kami yaitu <a href="https://onyx.id/">Onyx Big Data Platform</a>. Onyx banyak memanfaatkan aplikasi open source yang pada projek ini aplikasi yang digunakan adalah <strong>Apache Hadoop</strong>, <strong>Apache Airflow</strong>, <strong>Apache Hive</strong>, <strong>Apache Zeppelin</strong>, <strong>Apache Spark</strong>, dan <strong>OpenSearch</strong>.
+In this project, I had the opportunity to be the PIC for transferring data from a ministry's database (PostgreSQL) into a dedicated application. This data contains regional budgets that internally need to be disseminated to local governments using the application to be developed. My company was chosen to take responsibility for the application's database with our product, the <a href="https://onyx.id/">Onyx Big Data Platform</a>. Onyx leverages many open-source applications; in this project, the applications used are <strong>Apache Hadoop</strong>, <strong>Apache Airflow</strong>, <strong>Apache Hive</strong>, <strong>Apache Zeppelin</strong>, <strong>Apache Spark</strong>, and <strong>OpenSearch</strong>.
 </p>
 
 ![Alt Text](/pic/application_flow.jpg)
 
-Gambar 2.1
+Figure 2.1
 
 <p align="justify">
-Apache Airflow bertugas sebagai orchestration tool untuk melakukan penjadwalan mengalirkan data dari database kementerian ke <strong>Apache Hive</strong> dan <strong>OpenSearch</strong>. Pemrograman menggunakan <strong>bahasa python</strong> dengan memanfaatkan <strong>Apache Spark</strong> dalam melakukan transformasi data yang berat. Hasil pemrograman di Apache Airflow berbentuk <strong>DAG (Directed Acyclic Graph)</strong> yang jumlahnya ratusan DAG. Sebelum proses production, banyak simulasi yang dilakukan di notebook terutama menggunakan <strong>Apache Zeppelin</strong> sebelum akhirnya menjadi DAG yang siap digunakan. Berikut adalah alur dari DAG yang diciptakan.
+Apache Airflow serves as the orchestration tool to schedule the data flow from the ministry's database to <strong>Apache Hive</strong> and <strong>OpenSearch</strong>. Programming is done using <strong>Python</strong> while leveraging <strong>Apache Spark</strong> for heavy data transformations. The results in Apache Airflow are in the form of <strong>DAG (Directed Acyclic Graph)</strong>, with hundreds of DAGs created. Before the production process, many simulations were conducted in the notebook, particularly using <strong>Apache Zeppelin</strong>, before finally being transformed into DAGs ready for use. Below is the flow of the created DAG.
 </p>
 
 ![Alt Text](/pic/dag.png)
-Gambar 2.2
+Figure 2.2
 
 <p align="justify">
-Data yang masuk ke Apache Hive tidak dilakukan pengolahan data karena data yang masuk harus sama dengan sumber data sebagai data yang asli. Sedangkan pengolahan data dilakukan jika data tersebut masuk sebagai Index OpenSearch meliputi <strong>data cleansing</strong> dan <strong> data transforming</strong>.
+Data entering Apache Hive is not processed because the incoming data must match the source data as original data. Meanwhile, data processing occurs if the data enters as OpenSearch Index, including <strong>data cleansing</strong> and <strong>data transforming</strong>.
 </p>
 
-Data cleansing dan data transforming adalah dua tahap penting dalam proses pengolahan data, tetapi keduanya memiliki fokus dan tujuan yang berbeda.
+Data cleansing and data transforming are two essential stages in the data processing process, but they have different focuses and goals.
 
-Data cleansing, atau pembersihan data, adalah proses yang bertujuan untuk mengidentifikasi dan mengoreksi kesalahan dalam data. Proses ini mencakup berbagai aktivitas, seperti:
-1. **Identifikasi Kesalahan**: Memeriksa data untuk menemukan anomali, seperti duplikasi, nilai yang hilang, atau ketidakcocokan format. Misalnya, jika dalam suatu dataset terdapat nilai kosong atau entri yang salah ketik, langkah awal adalah mengidentifikasi masalah ini.
-2. **Penghapusan Duplikasi**: Menghilangkan entri yang sama dalam dataset untuk memastikan bahwa setiap record unik.
-3. **Koreksi Data**: Memperbaiki kesalahan dalam data, seperti mengubah format tanggal yang tidak konsisten atau memperbaiki kesalahan ejaan. Ini penting untuk memastikan bahwa data dapat digunakan untuk analisis yang akurat.
-4. **Validasi Data**: Memastikan bahwa data yang dikumpulkan memenuhi kriteria tertentu, seperti rentang nilai yang wajar atau format yang benar. Contohnya seperti melibatkan pemeriksaan apakah semua alamat email dalam format yang benar.
+Data cleansing, or data cleaning, is the process aimed at identifying and correcting errors in the data. This process includes various activities, such as:
+1. **Error Identification**: Checking the data to find anomalies, such as duplications, missing values, or format mismatches. For example, if a dataset contains empty values or typos, the initial step is to identify these issues.
+2. **Removing Duplicates**: Eliminating identical entries in the dataset to ensure that each record is unique.
+3. **Data Correction**: Fixing errors in the data, such as changing inconsistent date formats or correcting spelling mistakes. This is crucial to ensure that the data can be used for accurate analysis.
+4. **Data Validation**: Ensuring that the collected data meets certain criteria, such as reasonable value ranges or correct formats. For example, this might involve checking whether all email addresses are in the correct format.
 
-Data transforming, atau transformasi data, adalah proses yang bertujuan untuk mengubah data menjadi format yang lebih sesuai untuk analisis atau pemrosesan lebih lanjut. Proses ini mencakup berbagai aktivitas, seperti:
-1. **Normalisasi**: Mengubah skala data sehingga dapat dibandingkan secara konsisten. Misalnya, jika kita memiliki data anggaran dalam mata uang yang berbeda, kita mungkin perlu mengonversi semuanya ke dalam satu mata uang.
-2. **Agregasi**: Menggabungkan data dari beberapa sumber atau tingkat granularitas yang berbeda untuk memberikan pandangan yang lebih holistik. Contohnya, menjumlahkan total anggaran per kegiatan atau sub-kegiatan.
-3. **Pembuatan Fitur**: Menghasilkan variabel baru dari data yang ada untuk meningkatkan model analisis atau prediksi seperti flagging daerah miskin ekstrim.
-4. **Perubahan Struktur Data**: Mengubah format data, seperti memindahkan dari format tabel ke format JSON (atau sebaliknya), atau mengubah tipe data (misalnya, dari string ke integer) agar sesuai dengan kebutuhan aplikasi SIPD Hub.
+Data transforming, or data transformation, is the process aimed at changing the data into a format that is more suitable for analysis or further processing. This process includes various activities, such as:
+1. **Normalization**: Changing the scale of data so that it can be compared consistently. For example, if we have budget data in different currencies, we may need to convert everything into one currency.
+2. **Aggregation**: Combining data from multiple sources or different levels of granularity to provide a more holistic view. For instance, summing total budgets per activity or sub-activity.
+3. **Feature Creation**: Generating new variables from existing data to enhance the analysis or prediction models, such as flagging extremely poor regions.
+4. **Changing Data Structure**: Modifying the data format, such as converting from a table format to JSON format (or vice versa), or changing data types (e.g., from string to integer) to meet the needs of the the application.
 
-Hasil aplikasi:
+Application result:
 
 ![Alt Text](/pic/aplikasi_1.jpg)
-Gambar 2.3
+Figure 2.3
 ![Alt Text](/pic/aplikasi_2.jpg)
-Gambar 2.4
+Figure 2.4
 
 <br>
 <br>
@@ -89,16 +89,17 @@ Gambar 2.4
 ## 2. Telkomsel Orbit - Data Analyst
 ### Juni 2023 - Desember 2023
 <p align="justify">
-Telkomsel adalah tempat pertama kali saya bekerja secara profesional, maka dari itu saya lebih banyak membantu user saya dalam mengerjakan projek-projek Telkomsel Orbit. Sebagai data analis, saya lebih banyak menyusun reporting dashboard secara mingguan dan bulanan. Di sini saya memanfaatkan <strong>Microsoft Excel (terutama fitur pivot)</strong>, <strong>Microsoft Power Point</strong>, <strong>Tableau</strong>, <strong>Jupyter Notebook</strong>, dan <strong>SQL</strong>. Selain membantu user saya, saya mengemban tanggung jawab sebagai satu-satunya orang untuk memberikan kebutuhan data dari rekan-rekan satu divisi telkomsel orbit menggunakan HiveQL. Kebutuhan data dari rekan-rekan bervariasi. Mulai dari raw data sampai hasil analisa yang berbentuk keputusan terutama dalam menjalankan campaign terkait produk telkomsel orbit.
+Telkomsel is the first place I worked professionally, which is why I mostly helped my users in working on Telkomsel Orbit projects. As a data analyst, I primarily focused on compiling reporting dashboards on a weekly and monthly basis. Here, I utilized <strong>Microsoft Excel (especially the pivot feature)</strong>, <strong>Microsoft Power Point</strong>, <strong>Tableau</strong>, <strong>Jupyter Notebook</strong>, and <strong>SQL</strong>. In addition to assisting my users, I took on the responsibility as the only person providing data needs from colleagues in the Telkomsel Orbit division using HiveQL. The data needs from my colleagues varied, ranging from raw data to analytical results that informed decisions, especially in running campaigns related to the Telkomsel Orbit product.
 </p>
 
-Berikut adalah beberapa dashboard yang menjadi tanggung jawab saya:
+Here are some dashboards that I was responsible for:
 
 ![Alt Text](/pic/telkomsel_1.jpg)
-**Informasi angka dan kalimat dari gambar di atas tidak valid demi menjaga kerahasiaan Telkomsel.**
+**The information numbers and text in the image above are not valid to maintain Telkomsel's confidentiality.**
 
 ![Alt Text](/pic/telkomsel_2.jpg)
-**Informasi angka dan kalimat dari gambar di atas tidak valid demi menjaga kerahasiaan Telkomsel.**
+**The information numbers and text in the image above are not valid to maintain Telkomsel's confidentiality.**
+
 <br>
 <br>
 <br>
@@ -107,7 +108,7 @@ Berikut adalah beberapa dashboard yang menjadi tanggung jawab saya:
 ## 3. Purwadhika Digital Technology School - Bootcamp Data Science
 ### Mei 2022 - Oktober 2022
 <p align="justify">
-Sebagai lulusan elektro yang menempuh bidang arus lemah, saya memiliki basik konsep yang kuat terhadap pemrograman. Untuk memoles pemrograman saya, saya tertarik untuk berkarir di bidang data yang terus memanfaatkan ilmu pemrograman di dalamnya sehingga saya memilih purwadhika dengan mengambil kelas Data Science and Machine Learning. Di sini saya belajar tentang <strong>pemrograman dasar</strong>, <strong>statistika</strong>, <strong>dan Machine learning</strong>. Beberapa project dari dan setelah lulus dari purwadhika dapat diakses di sini:
+As a graduate in electrical engineering focused on low voltage, I possess a strong foundational concept of programming. To enhance my programming skills, I am interested in pursuing a career in data, which continuously utilizes programming knowledge, leading me to choose Purwadhika and enroll in the Data Science and Machine Learning class. Here, I learned about <strong>basic programming</strong>, <strong>statistics</strong>, and <strong>machine learning</strong>. Some projects from and after graduating from Purwadhika can be accessed here:
 </p>
 
 - [Crime in Boston](https://github.com/MuhammadMukhlis220/Porfotolio_Project/tree/main/Crime%20in%20Boston)
