@@ -1,5 +1,6 @@
 
 # Hotel Booking Cancelation (Machine Learning) 
+## **(Note: Open the ipynb file for the detail project)**
 ****
 
 # About this repository:
