@@ -1,4 +1,5 @@
 # Customer Segmentation Analysis Using Brazilian E-Commerce Public Dataset by Olist
+## **(Note: Open the ipynb file for the detail project)**
 
 ![a](https://play-lh.googleusercontent.com/eqLTXWdyygKUf85JsCXmcLSr1GnoYNLJfFVCmY-N8xGFr2T3PWwNcFdJ2Sx7MwcO6ac)
 
