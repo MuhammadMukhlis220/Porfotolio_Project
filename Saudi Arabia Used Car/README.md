@@ -6,7 +6,8 @@
 
 This repository contains a Machine Learning project to help the buyer, seller and the company about used cars using the [Saudi Arabia Used Car](https://www.kaggle.com/datasets/turkibintalib/saudi-arabia-used-cars-dataset) dataset.<br>
 Here the summary of the results of this project:
-(Note: Open the ipynb file for the detail project)
+
+**(Note: Open the ipynb file for the detail project)**
 ## **Business Problem Understanding**
 
 **Context**
