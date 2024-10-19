@@ -1,5 +1,6 @@
 
 # Crime in Boston (Data Analysis) 
+## **(Note: Open the ipynb file for the detail project)**
 ****
 
 # About this repository:
