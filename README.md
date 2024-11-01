@@ -570,7 +570,7 @@ Figure 2.1
 Apache Airflow serves as the orchestration tool to schedule the data flow from the ministry's database to <strong>Apache Hive</strong> and <strong>OpenSearch</strong>. Programming is done using <strong>Python</strong> while leveraging <strong>Apache Spark</strong> for heavy data transformations. The results in Apache Airflow are in the form of <strong>DAG (Directed Acyclic Graph)</strong>, with hundreds of DAGs created. Before the production process, many simulations were conducted in the notebook, particularly using <strong>Apache Zeppelin</strong>, before finally being transformed into DAGs ready for use. Below is the flow of the created DAG.
 </p>
 
-![Alt Text](/pic/dag.png)
+![Alt Text](/pic/dag_1.png)
 Figure 2.2
 
 <p align="justify">
