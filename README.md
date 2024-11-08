@@ -552,6 +552,11 @@ Figure 1.4
 Figure 1.5
 
 The three dashboard images above are interactive, allowing for filtering by club name or player name.
+
+While using Power BI, it looks like:
+
+![Alt Text](/pic/football_dashboard_1.png)
+Figure 1.6
 <br>
 <br>
 <br>
