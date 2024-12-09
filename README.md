@@ -6,7 +6,7 @@ Hello I'am Mukhlis a passionate person in data and machine learning who professi
 This section contains my portfolio showcasing my work experience and participation in the bootcamp at Purwadhika, where I developed skills and knowledge in the field of data..
 
 
-## 1. Optimasi Data Indonesia - Data Analyst
+## 1. Optimasi Data Indonesia - Data Science
 ### March 2024 - Present
 **1. Football Player Statistic**
    
