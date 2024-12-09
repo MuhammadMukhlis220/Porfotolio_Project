@@ -616,7 +616,8 @@ RFM can be performed manually or automatically. Manual segmentation takes a lot 
 Result:
 
 ![Alt Text](/pic/kementrian_ml_1.png)
-Figure 2.4
+
+Figure 2.5
 
 We choose the model based on **recency** and **frequency** resulting in a total of 4 groups. The fourth rank of group should be considered because all regions in there are lack synergy with the government's mission.
 
