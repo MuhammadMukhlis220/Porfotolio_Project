@@ -603,6 +603,23 @@ Figure 2.3
 ![Alt Text](/pic/aplikasi_2.jpg)
 Figure 2.4
 
+**Advance Analytics: RFM and Machine Learning**
+
+Perform regional government clustering using RFM and machine learning with K-Means model to identify regions that lack synergy with the government's mission in combating extreme poverty. 
+
+RFM can be performed manually or automatically. Manual segmentation takes a lot of time and effort, which is why automating the business process is often preferred. One such approach is to use specialized tools for region segmentation. A CDP (Customer Data Platform) is used as a source to obtain data related to region behavior, making the segmentation process more accurate. RFM is suitable for region segmentation because it considers region behavior based on the following three aspects:
+
+1. RECENCY (R): The time since the last program
+2. FREQUENCY (F): The number of programs made
+3. MONETARY VALUE (M): The total amount spent for all programs
+
+Result:
+
+![Alt Text](/pic/kementrian_ml_1.png)
+Figure 2.4
+
+We choose the model based on **recency** and **frequency** resulting in a total of 4 groups. The fourth rank of group should be considered because all regions in there are lack synergy with the government's mission.
+
 <br>
 <br>
 <br>
