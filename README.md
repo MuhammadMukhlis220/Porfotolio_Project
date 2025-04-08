@@ -1,4 +1,4 @@
-Hello I'am Mukhlis a passionate person in data and machine learning who professional in data analysis and experience in processing large datasets. Bachelor of Electrical Engineer with 2 years work experience in data. Have experience at PT. Telekomunikasi Selular Indonesia as Data Analyst and now work at PT. Optimasi Data Indonesia as Data Analyst.
+Hello I'am Mukhlis a passionate person in data and machine learning who professional in data analysis and experience in processing large datasets. Bachelor of Electrical Engineer with 2 years work experience in data. Have experience at PT. Telekomunikasi Selular Indonesia as Data Analyst and now work at PT. Optimasi Data Indonesia as Data Engineer.
 
 ---
 # **WELCOME TO MY PORTFOLIO**
@@ -6,7 +6,7 @@ Hello I'am Mukhlis a passionate person in data and machine learning who professi
 This section contains my portfolio showcasing my work experience and participation in the bootcamp at Purwadhika, where I developed skills and knowledge in the field of data..
 
 
-## 1. Optimasi Data Indonesia - Data Science
+## 1. Optimasi Data Indonesia - Data Engineer
 ### March 2024 - Present
 **1. Football Player Statistic**
    
