@@ -1,4 +1,6 @@
-Hello I'am Mukhlis a passionate person in data and machine learning who professional in data analysis and experience in processing large datasets. Bachelor of Electrical Engineer with 2 years work experience in data. Have experience at PT. Telekomunikasi Selular Indonesia as Data Analyst and now work at PT. Optimasi Data Indonesia as Data Engineer.
+Hello I'am Mukhlis a passionate person in data and machine learning who professional in data and experience in processing large datasets. Bachelor of Electrical Engineer with 2 years work experience in data. Have experience at PT. Telekomunikasi Selular Indonesia as Data Analyst and now work at PT. Optimasi Data Indonesia as Data Engineer.
+
+Some data processor
 
 ---
 # **WELCOME TO MY PORTFOLIO**
@@ -631,7 +633,7 @@ We choose the model based on **recency** and **frequency** resulting in a total 
 ## 2. Telkomsel Orbit - Data Analyst
 ### June 2023 - December 2023
 <p align="justify">
-Telkomsel is the first place I worked professionally, which is why I mostly helped my users in working on Telkomsel Orbit projects. As a data analyst, I primarily focused on compiling reporting dashboards on a weekly and monthly basis. Here, I utilized <strong>Microsoft Excel (especially the pivot feature)</strong>, <strong>Microsoft Power Point</strong>, <strong>Tableau</strong>, <strong>Jupyter Notebook</strong>, and <strong>SQL</strong>. In addition to assisting my users, I took on the responsibility as the only person providing data needs from colleagues in the Telkomsel Orbit division using HiveQL. The data needs from my colleagues varied, ranging from raw data to analytical results that informed decisions, especially in running campaigns related to the Telkomsel Orbit product.
+Telkomsel is the first place I worked professionally, which is why I mostly helped my users in working on Telkomsel Orbit projects. As a data analyst, I primarily focused on compiling reporting dashboards on a weekly and monthly basis. Here, I utilized <strong>Microsoft Excel (especially the pivot feature)</strong>, <strong>Microsoft Power Point</strong>, <strong>Tableau</strong>, <strong>Jupyter Notebook</strong>, and <strong>SQL</strong>. In addition to assisting my users, I took on the responsibility as the only person providing data needs from colleagues in the Telkomsel Orbit division using HiveQL (This company using Hadoop environment). The data needs from my colleagues varied, ranging from raw data to analytical results that informed decisions, especially in running campaigns related to the Telkomsel Orbit product.
 </p>
 
 Here are some dashboards that I was responsible for:
@@ -664,3 +666,6 @@ As a graduate in electrical engineering focused on low voltage, I possess a stro
 Connect me in [LinkedIn](www.linkedin.com/in/mmukhlis10) or touch my social media in [Twitter](https://twitter.com/bobyjhow).
 
 Thank You
+
+## Misc
+I already wrote some mini project outside my core job since for data processor from Apache Foundation like Apache Impala, Kudu, Superset, Sqoop, until Spark machine learning (performing NLP for NER and SA). All wrote in my github repositories. Feel free to visit it. 
