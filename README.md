@@ -3,6 +3,10 @@
 
 This section contains my portfolio showcasing my work experience and participation in the bootcamp at Purwadhika, where I developed skills and knowledge in the field of data.
 
+__Disclaimer:__
+<br>
+__Not all of my professional experience is listed here (such as technical support tasks), as I’ve chosen to highlight the projects and responsibilities that are most meaningful and relevant to my interests in data and machine learning__.
+
 ---
 
 Hi, I'am Mukhlis~
@@ -676,8 +680,7 @@ As a graduate in electrical engineering focused on low voltage, I possess a stro
 
 ---
 Connect me in [LinkedIn](www.linkedin.com/in/mmukhlis10) or touch my social media in [Twitter](https://twitter.com/bobyjhow).
-
-Thank You
+Thank You!
 
 ## Misc
 In addition to my core job, I’ve worked on several mini-projects involving data processing technologies from the Apache Foundation, including:
