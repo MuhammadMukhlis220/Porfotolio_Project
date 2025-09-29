@@ -19,7 +19,7 @@ With a strong technical foundation and business-oriented mindset, I aim to build
 
 **My expertise across the data lifecycle:**
 
-![Alt Text](/pic/stack-tools.png)
+![Alt Text](/pic/stack-tools-v2.jpg)
 
 Figure: My tech stack
 
