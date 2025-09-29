@@ -1,11 +1,23 @@
-Hello I'am Mukhlis a passionate person in data and machine learning who professional in data and experience in processing large datasets. Bachelor of Electrical Engineer with 2 years work experience in data. Have experience at PT. Telekomunikasi Selular Indonesia as Data Analyst and now work at PT. Optimasi Data Indonesia as Data Engineer.
 
-Some data processor
-
----
 # **WELCOME TO MY PORTFOLIO**
 
-This section contains my portfolio showcasing my work experience and participation in the bootcamp at Purwadhika, where I developed skills and knowledge in the field of data..
+This section contains my portfolio showcasing my work experience and participation in the bootcamp at Purwadhika, where I developed skills and knowledge in the field of data.
+
+---
+
+Hi, I'am Mukhlis~
+
+I'm a passionate Data enthusiast with a Bachelor's degree in Electrical Engineering and over 2 years of professional experience in the data field.
+
+I specialize in processing large-scale datasets, building robust data pipelines, and transforming raw data into meaningful insights. I began my career as a Data Analyst at PT Telekomunikasi Selular Indonesia, where I supported strategic decision-making through data-driven analysis. Currently, I'm working as a Data Engineer at PT Optimasi Data Indonesia, focusing on data infrastructure, pipeline optimization, and scalable data solutions.
+
+With a strong technical foundation and business-oriented mindset, I aim to build impactful solutions through data.
+
+**My expertise across the data lifecycle:**
+
+![Alt Text](/pic/stack-tools.png)
+
+Figure: My tech stack
 
 
 ## 1. Optimasi Data Indonesia - Data Engineer
@@ -668,4 +680,14 @@ Connect me in [LinkedIn](www.linkedin.com/in/mmukhlis10) or touch my social medi
 Thank You
 
 ## Misc
-I already wrote some mini project outside my core job since for data processor from Apache Foundation like Apache Impala, Kudu, Superset, Sqoop, until Spark machine learning (performing NLP for NER and SA). All wrote in my github repositories. Feel free to visit it. 
+In addition to my core job, I’ve worked on several mini-projects involving data processing technologies from the Apache Foundation, including:
+
+- Apache Impala
+- Apache Kudu
+- Apache Superset
+- Apache Sqoop
+- Apache Spark (with MLlib for NLP tasks such as Named Entity Recognition and Sentiment Analysis)
+- ETC
+
+These projects reflect my passion for exploring big data ecosystems and applying machine learning techniques to real-world problems.
+All of my projects are available in my GitHub repositories — feel free to explore them!
