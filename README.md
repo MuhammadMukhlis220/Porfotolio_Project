@@ -693,4 +693,4 @@ In addition to my core job, I’ve worked on several mini-projects involving dat
 - ETC
 
 These projects reflect my passion for exploring big data ecosystems and applying machine learning techniques to real-world problems.
-All of my projects are available in my GitHub repositories — feel free to explore them!
+**All of my projects are available in my GitHub repositories** — feel free to explore them!
