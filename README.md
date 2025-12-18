@@ -32,9 +32,9 @@ Figure: My tech stack
 In this project, I am responsible for preparing a use case related to football player statistics for potential clients from one of the largest football clubs in Indonesia. Data is taken from the website <a href="https://www.sofascore.com">Sofascore</a> using the available API. I tried to find freely available APIs besides Sofascore, but it is quite difficult because most API service providers for football player statistics are subscription-based. Unfortunately, Sofascore only provides player statistics based on their overall performance, making it challenging to determine the development of players from each match played. The player data collected includes players from the top 5 European leagues (English Premier League, France, Italy, Spain, and Germany) and BRI Liga 1 Indonesia.
 </p>
 
-![Alt Text](/pic/football_flow_1.jpg)
+![Alt Text](/pic/football_flow_2.jpg)
 
-Figure 1.1
+Figure 1.1 Workflow Pipeline
 <p align="justify"> The data extraction process from the web is executed using <strong>Apache Airflow</strong> as a data orchestration tool scheduled to pull data weekly through the API while considering the match schedules between countries from FIFA. The data collected is inserted into <strong>OpenSearch</strong> for visualization. </p>
 
 Here is the Sofascore data retrieved via the available API:
@@ -571,7 +571,7 @@ Figure 1.5
 
 The three dashboard images above are interactive, allowing for filtering by club name or player name.
 
-While using Power BI, it looks like:
+While using **Microsoft Power BI**, it looks like:
 
 ![Alt Text](/pic/football_dashboard_1.png)
 Figure 1.6
@@ -585,9 +585,9 @@ Figure 1.6
 In this project, I had the opportunity to be the PIC for transferring data from a ministry's database (PostgreSQL) into a dedicated application. This data contains regional budgets that internally need to be disseminated to local governments using the application to be developed. My company was chosen to take responsibility for the application's database with our product, the <a href="https://onyx.id/">Onyx Big Data Platform</a>. Onyx leverages many open-source applications; in this project, the applications used are <strong>Apache Hadoop</strong>, <strong>Apache Airflow</strong>, <strong>Apache Hive</strong>, <strong>Apache Zeppelin</strong>, <strong>Apache Spark</strong>, and <strong>OpenSearch</strong>.
 </p>
 
-![Alt Text](/pic/application_flow.jpg)
+![Alt Text](/pic/application_flow_2.jpg)
 
-Figure 2.1
+Figure 2.1 Workflow Pipeline
 
 <p align="justify">
 Apache Airflow serves as the orchestration tool to schedule the data flow from the ministry's database to <strong>Apache Hive</strong> and <strong>OpenSearch</strong>. Programming is done using <strong>Python</strong> while leveraging <strong>Apache Spark</strong> for heavy data transformations. The results in Apache Airflow are in the form of <strong>DAG (Directed Acyclic Graph)</strong>, with hundreds of DAGs created. Before the production process, many simulations were conducted in the notebook, particularly using <strong>Apache Zeppelin</strong>, before finally being transformed into DAGs ready for use. Below is the flow of the created DAG.
