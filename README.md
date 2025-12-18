@@ -26,8 +26,15 @@ Figure: My tech stack
 
 ## 1. Optimasi Data Indonesia - Data Engineer
 ### March 2024 - Present
-**1. Football Player Statistic**
-   
+### **1. Football Player Statistic**
+
+**Role:** Data Engineer<br>
+**Domain:** Football Club<br>
+**Tech Stack:** Apache Airflow, Opensearch, Apache Impala, Microsoft Power BI.<br>
+
+---
+
+**Project Overview:**
 <p align="justify">
 In this project, I am responsible for preparing a use case related to football player statistics for potential clients from one of the largest football clubs in Indonesia. Data is taken from the website <a href="https://www.sofascore.com">Sofascore</a> using the available API. I tried to find freely available APIs besides Sofascore, but it is quite difficult because most API service providers for football player statistics are subscription-based. Unfortunately, Sofascore only provides player statistics based on their overall performance, making it challenging to determine the development of players from each match played. The player data collected includes players from the top 5 European leagues (English Premier League, France, Italy, Spain, and Germany) and BRI Liga 1 Indonesia.
 </p>
@@ -579,8 +586,15 @@ Figure 1.6
 <br>
 <br>
 <br>
-**2. Ministry Application**
+### **2. Ministry Application**
 
+**Role:** Big Data Engineer / Data Engineer<br>
+**Domain:** Government<br>
+**Tech Stack:** Apache Spark, Apache Airflow, Opensearch, APache Hive, Hadoop HDFS, Oracle DB, PostgreSQL DB.<br>
+
+---
+
+**Project Overview:**
 <p align="justify">
 In this project, I had the opportunity to be the PIC for transferring data from a ministry's database (PostgreSQL) into a dedicated application. This data contains regional budgets that internally need to be disseminated to local governments using the application to be developed. My company was chosen to take responsibility for the application's database with our product, the <a href="https://onyx.id/">Onyx Big Data Platform</a>. Onyx leverages many open-source applications; in this project, the applications used are <strong>Apache Hadoop</strong>, <strong>Apache Airflow</strong>, <strong>Apache Hive</strong>, <strong>Apache Zeppelin</strong>, <strong>Apache Spark</strong>, and <strong>OpenSearch</strong>.
 </p>
@@ -638,6 +652,52 @@ Result:
 Figure 2.5
 
 We choose the model based on **recency** and **frequency** resulting in a total of 4 groups. The fourth rank of group should be considered because all regions in there are lack synergy with the government's mission.
+
+<br>
+<br>
+<br>
+<br>
+
+### **3. Cloudera Migration**
+
+**Role:** Big Data Engineer / Data Engineer<br>
+**Domain:** Insurance Industry<br>
+**Tech Stack:** Apache Spark 3 (PySpark), Apache Airflow, HDFS, Apache Impala, HiveQL, Apache Superset, Oracle DB.<br>
+
+---
+
+**Project Overview:** <br>
+Led the Proof of Concept (PoC) for migrating a legacy monolithic Big Data architecture (Cloudera) to a modern Onyx Big Data Platform (OBDP). The core objective was to refactor and optimize legacy Spark 2 (Scala) pipelines into Spark 3 (PySpark) while ensuring data integrity and enhancing orchestration capabilities.
+
+**Architecture & Workflow**
+Designed an end-to-end data pipeline completely residing within the **HDFS** ecosystem to minimize egress costs and maximize throughput.
+
+1.  **Ingestion (ELT):**
+    * Orchestrated data extraction from **Oracle** databases directly into **HDFS** (Parquet format) using **Apache Spark** with **Apache Airflow** (Spark Submit Operator).
+    * Registered data as Hive tables to ensure immediate query accessibility via **Apache Impala** and **Apache Hue**.
+
+2.  **Data Processing & Cleansing:**
+    * Refactored legacy processing logic into **PySpark** to leverage the Python ecosystem (Airflow, Zeppelin).
+    * Developed a robust cleansing pipeline involving over **25 sequential Spark scripts**.
+    * Transformed Raw Data into **3 Core Master Tables**, adhering to strict business logic and Hive Metastore integration.
+
+3.  **Data Marts & Visualization:**
+    * Aggregated Master Data into high-performance Data Marts stored in HDFS.
+    * Connected **Apache Superset** to Impala for real-time dashboarding and visualization.
+
+**Key Improvements & Modernization**
+* **Orchestration:** Transitioned from legacy Linux Cron Jobs to **Apache Airflow**, enabling DAG-based dependency management, better retries, and monitoring.
+* **Engine Upgrade:** Migrated compute engines from Spark 2 (Scala) to **Spark 3 (PySpark)** to utilize modern optimization techniques and better memory management.
+
+**Challenges & Outcomes: Spark 2 vs. Spark 3**
+Achieved **95% data consistency** between the legacy and modern systems. The 5% variance represents a significant **improvement in data quality** rather than data loss, driven by Spark 3's stricter ANSI compliance:
+
+* **Financial Data Accuracy:** Achieved **100% accuracy** on critical financial columns.
+* **Data Quality Enforcement:**
+    * *Invalid Dates:* Legacy Spark 2 silently converted invalid dates (e.g., "Day 40") to `NULL`. Spark 3 enforces strict validation, flagging errors that allowed us to identify and fix upstream data issues, effectively populating previously null fields.
+    * *Calendar Shifts:* Resolved timestamp shifting issues present in Spark 2's Parquet writer (related to pre-Gregorian calendar conversion). Spark 3 maintained accurate timestamp integrity during storage.
+
+**Conclusion:** The migration successfully demonstrated that moving to OBDP with Spark 3 not only replicated the legacy workflow but significantly hardened the data quality framework and modernized the operational toolset.
 
 <br>
 <br>
