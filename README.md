@@ -669,6 +669,10 @@ We choose the model based on **recency** and **frequency** resulting in a total 
 **Project Overview:** <br>
 Led the Proof of Concept (PoC) for migrating a legacy monolithic Big Data architecture (Cloudera) to a modern Onyx Big Data Platform (OBDP). The core objective was to refactor and optimize legacy Spark 2 (Scala) pipelines into Spark 3 (PySpark) while ensuring data integrity and enhancing orchestration capabilities.
 
+![Alt Text](/pic/cloudera_migration_flow_1.jpg)
+
+Figure 3.1 Workflow Pipeline
+
 **Architecture & Workflow**
 Designed an end-to-end data pipeline completely residing within the **HDFS** ecosystem to minimize egress costs and maximize throughput.
 
@@ -753,4 +757,4 @@ In addition to my core job, I’ve worked on several mini-projects involving dat
 - ETC
 
 These projects reflect my passion for exploring big data ecosystems and applying machine learning techniques to real-world problems.
-**All of my projects are available in my GitHub repositories** — feel free to explore them!
+**All of my projects are available in my GitHub repositories**. Feel free to explore them!
