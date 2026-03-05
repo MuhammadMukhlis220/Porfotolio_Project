@@ -25,7 +25,7 @@ Figure: My tech stack
 
 
 ## 1. Optimasi Data Indonesia - Data Engineer
-### March 2024 - Present
+### March 2024 - Dec 2025
 ### **1. Football Player Statistic**
 
 **Role:** Data Engineer<br>
